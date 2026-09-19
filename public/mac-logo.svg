@@ -1,0 +1,54 @@
+<svg viewBox="0 0 1200 1200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="neonGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2FE8C8"/>
+      <stop offset="55%" stop-color="#2E9FE0"/>
+      <stop offset="100%" stop-color="#2B5FE0"/>
+    </linearGradient>
+    <radialGradient id="ballGrad" cx="45%" cy="30%" r="75%">
+      <stop offset="0%" stop-color="#3FE0C6"/>
+      <stop offset="45%" stop-color="#1E5FA8"/>
+      <stop offset="100%" stop-color="#0A1730"/>
+    </radialGradient>
+  </defs>
+
+  <!-- background -->
+  <circle cx="600" cy="600" r="595" fill="#050608"/>
+
+  <!-- outer ring -->
+  <circle cx="600" cy="600" r="578" fill="none" stroke="url(#neonGrad)" stroke-width="6"/>
+
+  <!-- inner partial arcs -->
+  <path d="M 125.42,326.00 A 548,548 0 0 1 1074.58,326.00" fill="none" stroke="url(#neonGrad)" stroke-width="3" opacity="0.85"/>
+  <path d="M 125.42,874.00 A 548,548 0 0 0 1074.58,874.00" fill="none" stroke="url(#neonGrad)" stroke-width="3" opacity="0.85"/>
+
+  <!-- top arc text path -->
+  <path id="topArc" d="M 130.15,428.99 A 500,500 0 0 1 1069.85,428.99" fill="none"/>
+  <text font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="58" letter-spacing="14" fill="url(#neonGrad)">
+    <textPath href="#topArc" startOffset="50%" text-anchor="middle">THE MAC</textPath>
+  </text>
+
+  <!-- bottom arc text path -->
+  <path id="bottomArc" d="M 130.15,771.01 A 500,500 0 0 0 1069.85,771.01" fill="none"/>
+  <text font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="50" letter-spacing="10" fill="url(#neonGrad)">
+    <textPath href="#bottomArc" startOffset="50%" text-anchor="middle">MILL ATHLETIC CLUB</textPath>
+  </text>
+
+  <!-- decorative dashes below MAC row -->
+  <line x1="330" y1="855" x2="470" y2="855" stroke="url(#neonGrad)" stroke-width="6" stroke-linecap="round"/>
+  <line x1="730" y1="855" x2="870" y2="855" stroke="url(#neonGrad)" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- kettlebell handle -->
+  <path d="M 505,650 L 505,460 Q 505,375 600,375 Q 695,375 695,460 L 695,650"
+        fill="none" stroke="url(#neonGrad)" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- kettlebell ball -->
+  <circle cx="600" cy="665" r="165" fill="url(#ballGrad)" stroke="url(#neonGrad)" stroke-width="7"/>
+
+  <!-- MAC lettering -->
+  <g font-family="Arial Black, Arial, sans-serif" font-weight="900" text-anchor="middle">
+    <text x="335" y="800" font-size="345" fill="#050608" stroke="url(#neonGrad)" stroke-width="7">M</text>
+    <text x="600" y="800" font-size="345" fill="#050608" stroke="url(#neonGrad)" stroke-width="7">A</text>
+    <text x="865" y="800" font-size="345" fill="#050608" stroke="url(#neonGrad)" stroke-width="7">C</text>
+  </g>
+</svg>
